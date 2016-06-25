@@ -42,7 +42,9 @@ ol, ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  border: none;
 }
+
 
 /*******************************************************************************
 Theme Styles
@@ -234,7 +236,7 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
+  border: none;
   margin-bottom: 20px;
   text-align: left;
  }
@@ -248,7 +250,7 @@ th {
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: none;
  }
 
 form {
@@ -257,8 +259,47 @@ form {
 }
 
 /*******************************************************************************
+Navigation Box
+*******************************************************************************/
+#top { 
+  z-index: 2; 
+  width: 200px; 
+  line-height: 2em; 
+  background: #222222; 
+  padding: 30px; 
+} 
+
+ #top li li, #top li li a { 
+  height:0px; 
+  margin-top: -10px; 
+  text-align: center; 
+  color: rgba(255,255,255,.0); 
+  text-decoration: none; 
+  -webkit-transition:all .7s ease-in-out;
+ } 
+ 
+ li { 
+  list-style: none; 
+} 
+
+a { 
+  color: orange; 
+  text-decoration: none; 
+}  
+
+/*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
+.btnouter
+{
+    width:100%;
+    text-align: center;
+}
+
+.btninner
+{
+    display: inline-block;
+}
 
 .outer {
   width: 100%;
@@ -271,15 +312,15 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#forkme_banner {
+.banner {
   display: block;
-  position: absolute;
+  position: relative;
   top:0;
   right: 10px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/epicmode_30x30.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
