@@ -1,0 +1,17 @@
+
+/* myStyleSheets.css */
+
+.myImage {
+  position: relative;
+  margin: 0 auto;
+  max-width: 739px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 0px;
+  box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0; 
+  -o-box-shadow: 0 0 0 0;
+  -ms-box-shadow: 0 0 0 0;
+  }
+
