@@ -8,10 +8,10 @@
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 0px;
-  box-shadow: 0 0 0 0;
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0; 
-  -o-box-shadow: 0 0 0 0;
-  -ms-box-shadow: 0 0 0 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; 
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
   }
 
