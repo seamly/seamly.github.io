@@ -1,2 +1,2 @@
-# EpicMode.github.io
-EpicMode Website
+# Seamly.github.io
+Seamly Website
