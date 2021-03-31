@@ -1,0 +1,391 @@
+:root {
+  --teal: #7ececb;
+  --radiant-teal: #0bf5ef;
+  --hover-teal: #4e9895;
+  --transition: all 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  line-height: 24px;
+}
+
+header {
+  background: #000;
+  padding: 0 28px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  font-size: 24px;
+  color: #fff;
+  height: 80px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  width: 33%;
+  justify-content: space-evenly;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 0px 94px;
+  padding-bottom: 10px;
+}
+
+.hero p {
+  padding-left: 28px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-account img {
+  width: 60%;
+}
+
+.button-section {
+  background: var(--teal);
+  padding: 26px 168px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button-section div {
+  background: #fff;
+  border: solid 2px #000;
+  padding: 31px 97px;
+  display: flex;
+  border-radius: 32px;
+  font-size: 20px;
+  align-items: center;
+  max-height: 90px;
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+.button-section div img {
+  max-height: 80px;
+}
+
+.select-pattern {
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.select-pattern:hover {
+  background: var(--hover-teal);
+  color: #fff;
+}
+
+.file {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 0 20%;
+  opacity: 0;
+  position: absolute;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-section {
+  padding: 49px 288px;
+}
+
+.about-section div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.about-section div img {
+  margin-right: 16px;
+  width: 25%;
+  height: auto;
+}
+
+.about-section p {
+  font-size: 16px;
+}
+
+.download-section div {
+  display: flex;
+  align-items: center;
+}
+
+.download-section div img {
+  margin-right: 16px;
+}
+
+/* Measurements ---------------------------- */
+.button-section .active-step {
+  color: #fff;
+  background: var(--hover-teal);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h2 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-size: 28px;
+  width: 400px;
+}
+
+.measurements-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.measurements-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.measurements-form label {
+  font-size: 20px;
+}
+
+.measurements-form div input {
+  margin-left: 1rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 12px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.measurements-buttons {
+  margin-bottom: 4rem;
+}
+
+.measurements-buttons button {
+  font-size: 28px;
+  padding: 0.5rem 0rem;
+  width: 10rem;
+  border-radius: 12px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.measurements-buttons .first-measurements-button {
+  background: var(--teal);
+  color: #fff;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+
+.measurements-buttons .first-measurements-button:hover {
+  background: var(--hover-teal);
+}
+
+/* Convert My Pattern -------- */
+.card-container {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.convert-my-pattern-card {
+  border: solid 1px #000;
+  border-radius: 12px;
+  width: 25%;
+}
+
+.card-title button {
+  transition: var(--transition);
+}
+
+.card-title button:hover {
+  background: var(--hover-teal);
+  color: #fff;
+}
+
+.convert-my-pattern-card .card-title {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.convert-my-pattern-card div button {
+  font-size: 28px;
+  padding: 0.5rem 0rem;
+  width: 10rem;
+  border-radius: 12px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.convert-my-pattern-card .card-list {
+  padding: 1rem 2rem;
+}
+
+/* converting -------------- */
+
+#convert-progress {
+  background-color: #fff;
+  width: 60%;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: -1;
+  border: solid 1px #000;
+}
+
+#convert-progress p {
+  z-index: 1;
+}
+
+#progress-bar {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 1%;
+  height: 28px;
+  background-color: var(--radiant-teal);
+}
+
+/* download ------------- */
+/* .download-page-container {
+  height: 80vh;
+} */
+
+.download-hero p {
+  line-height: 32px;
+}
+
+.download-button-section {
+  background: var(--teal);
+  height: 142px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.download-card {
+  background: #fff;
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 22%;
+  border: solid 1px #000;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.download-card button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.download-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.download-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.download-flex h3 {
+  margin-bottom: 2rem;
+}
+
+.download-flex img {
+  margin-left: 1rem;
+  width: 30%;
+}
+
+.download-flex-buttons div,
+.download-flex-buttons a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: solid 1px #000;
+  padding: 0.5rem 4rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.download-flex-buttons div img {
+  width: 26%;
+}
+
+.download-flex-buttons div:hover,
+.download-flex-buttons a:hover {
+  color: #fff;
+  background: var(--hover-teal);
+}
+
+.open-my-fitwear-button {
+  text-align: center;
+  border: solid 1px #000;
+  padding: 1rem 4rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 28px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.open-my-fitwear-button:hover {
+  color: #fff;
+  background: var(--hover-teal);
+}

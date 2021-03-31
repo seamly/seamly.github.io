@@ -39,49 +39,57 @@
     <main>
       <section class="button-section">
         <div class="select-pattern">
-          <input id="select-my-pattern" type="file" class="file"/>
+          <input id="select-my-pattern" type="file" class="file" />
           <p>Select My Pattern</p>
           <img src="./assets/upload.png" alt="Upload button" />
         </div>
-        <div>
+        <div class="active-step">
           <p>Enter My Measurements</p>
         </div>
         <div>
           <p>Convert My Pattern</p>
         </div>
       </section>
-      <div class="download-container">
-        <section class="about-section">
+      <div class="form-container">
+        <h2>Enter measurements from your base size or fit model</h2>
+        <form class="measurements-form" action="">
           <div>
-            <img src="./assets/snap.png" alt="Hand Snapping" />
-            <p>Easy to use<br />No special training required</p>
+            <label for="height">Height</label>
+            <input type="text" placeholder="5'7" />
           </div>
           <div>
-            <img src="./assets/files.png" alt="Files" />
-            <p>All industry formats supported</p>
+            <label for="Inseam">Inseam</label>
+            <input type="text" placeholder='30"' />
           </div>
           <div>
-            <img src="./assets/toolbox.png" alt="Tool Box" />
-            <p>Your pattern is verified<br />Additional support available</p>
+            <label for="bust">Bust</label>
+            <input type="text" placeholder='34"' />
           </div>
           <div>
-            <img src="./assets/cloud-sync.png" alt="Cloud" />
-            <p>
-              Processed securely in the cloud.<br />No need to install anything
-            </p>
+            <label for="Outseam">Outseam</label>
+            <input type="text" placeholder='35"' />
           </div>
-        </section>
-        <section class="download-section">
-          <p>
-            Save hundreds on pattern development<br />Results displayed on your
-            avatar in your browser
-          </p>
           <div>
-            <img src="./assets/avatar.png" alt="An avatar wearing a dress">
-            <img src="./assets/download.png" alt="Download button">
-            <p>Download files to<br/>Computer<br/>Dropbox</br>Google Drive<br/>OneDrive</p>
+            <label for="waist">Waist</label>
+            <input type="text" placeholder="24" />
           </div>
-        </section>
+          <div>
+            <label for="sleeve-length">Sleeve Length</label>
+            <input type="text" placeholder='30"' />
+          </div>
+          <div>
+            <label for="hips">Hips</label>
+            <input type="text" placeholder='35"' />
+          </div>
+          <div>
+            <label for="base-neck-circumference">Base Neck Circumference</label>
+            <input type="text" placeholder='14.5"' />
+          </div>
+        </form>
+        <div class="measurements-buttons">
+          <button id="ok-button" class="first-measurements-button">Ok</button>
+          <button id="cancel-button">Cancel</button>
+        </div>
       </div>
     </main>
     <!-- End Main Content -->
